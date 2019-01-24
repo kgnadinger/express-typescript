@@ -3,9 +3,10 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import { Request, Response } from 'express';
 import { createModels } from "./models";
-import { UserInstance } from "./models/User";
-import { CommentInstance } from "./models/Comment";
-import { PostInstance } from "./models/Post";
+import { UserInstance } from "app/models/User";
+import { CommentInstance } from "app/models/Comment";
+import { PostInstance } from "app/models/Post";
+import cors from 'cors';
 
 const sequelizeConfg = require("./config/config.json");
 const db = createModels(sequelizeConfg.local);
@@ -13,6 +14,7 @@ db.sequelize.sync();
 
 const app: express.Application = express();
 
+app.use(cors());
 app.use(bodyParser());
 app.use(cookieParser());
 

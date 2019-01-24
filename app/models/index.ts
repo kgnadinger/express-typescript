@@ -1,5 +1,5 @@
 import Sequelize from 'sequelize';
-import { DbInterface } from'../typings/DbInterface';
+import { DbInterface } from 'app/typings/DbInterface';
 import { UserFactory } from './User';
 import { PostFactory } from './Post';
 import { CommentFactory } from './Comment';

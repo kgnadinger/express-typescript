@@ -1,5 +1,5 @@
 import * as Sequelize from "sequelize";
-import { SequelizeAttributes } from '../../typings/SequelizeAttributes';
+import { SequelizeAttributes } from 'app/typings/SequelizeAttributes';
 import { PostAttributes, PostInstance } from '../Post';
 import { CommentAttributes, CommentInstance } from '../Comment';
 

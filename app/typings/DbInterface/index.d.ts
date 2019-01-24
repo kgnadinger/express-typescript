@@ -1,7 +1,7 @@
 import * as Sequelize from "sequelize";
-import { CommentAttributes, CommentInstance } from "../../models/Comment";
-import { PostAttributes, PostInstance } from "../../models/Post";
-import { UserAttributes, UserInstance } from "../../models/User";
+import { CommentAttributes, CommentInstance } from "app/models/Comment";
+import { PostAttributes, PostInstance } from "app/models/Post";
+import { UserAttributes, UserInstance } from "app/models/User";
 
 export interface DbInterface {
     sequelize: Sequelize.Sequelize;

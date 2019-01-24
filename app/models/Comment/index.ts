@@ -1,7 +1,7 @@
 import * as Sequelize from 'sequelize';
 import { PostAttributes, PostInstance } from '../Post';
 import { UserAttributes, UserInstance } from '../User';
-import { SequelizeAttributes } from '../../typings/SequelizeAttributes';
+import { SequelizeAttributes } from 'app/typings/SequelizeAttributes';
 
 export interface CommentAttributes {
   id?: number;
